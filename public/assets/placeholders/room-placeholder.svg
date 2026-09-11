@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder foto kamar demo</title>
+  <desc id="desc">Placeholder lokal untuk fixture sintetis</desc>
+  <rect width="640" height="420" rx="24" fill="#e9f5ee"/>
+  <path d="M96 300 218 184l84 80 62-58 180 94H96Z" fill="#a8d5b5"/>
+  <circle cx="466" cy="126" r="42" fill="#74b98a"/>
+  <text x="320" y="360" fill="#23613a" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">Foto kamar demo</text>
+</svg>
