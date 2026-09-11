@@ -1,33 +1,33 @@
 # Mamikos Homepage Clone
 
-Submission untuk **Frontend Engineer Technical Test: AI-Assisted Build**. Clone homepage Mamikos menggunakan data mock lokal, tanpa backend atau database.
+Submission for the **Frontend Engineer Technical Test: AI-Assisted Build**. A Mamikos homepage clone using local mock data, with no backend or database.
 
 **Live demo:** [mamikos-clone.yuoibur.workers.dev](https://mamikos-clone.yuoibur.workers.dev)
 
-## Pendekatan & proses
+## Approach & workflow
 
-Saya memulai dari inspeksi referensi website dan planning bersama AI, lalu memecah pekerjaan menjadi checkpoint kecil: foundation, shell, mock data, komponen, dan section halaman. Saya menggunakan **Traycer dengan Codex (Luna Max)**, dengan satu coordinator dan tiga agent untuk UI, mock data/state, serta review/QA.
+I started by inspecting website references and planning with AI, then split the work into small checkpoints: foundation, shell, mock data, components, and page sections. I used **Traycer with Codex (Luna Max)**, with one coordinator and three agents covering UI, mock data/state, and review/QA.
 
-Scope awal mencakup homepage, search overlay, search, profile, favorit, detail kos, dan auth modal. Di tengah pengerjaan, saya membatasi scope menjadi **homepage saja** karena keterbatasan waktu dan resource. Implementasi di luar scope tersebut kemudian dibersihkan.
+The initial scope included the homepage, search overlay, search results, profile, favorites, room details, and an auth modal. Midway through development, I narrowed it to **the homepage only** due to time and resource constraints. Implementations outside that scope were then removed.
 
-Hasil AI tidak langsung saya terima: saya membandingkan tampilannya dengan referensi dan memberikan koreksi per bagian, termasuk navbar, footer, dan perilaku search navbar saat scroll. Workflow juga disederhanakan: pemeriksaan visual saya tangani sendiri, sementara AI membantu implementasi, perbaikan, dan pemeriksaan kode/build.
+I did not accept AI output without checking it: I compared the UI against the references and requested corrections section by section, including the navbar, footer, and navbar search visibility on scroll. I also simplified the workflow by handling visual checks myself while AI helped with implementation, fixes, and code/build checks.
 
-## Stack & keputusan utama
+## Stack & key decisions
 
-- **Vite, React, TypeScript, Tailwind CSS, dan shadcn/ui**, dengan Embla untuk carousel.
-- Komponen reusable dipisahkan per konteks; komposisi homepage ada di `src/pages/HomePage.tsx`.
-- Data kos menggunakan mock lokal; aset dikelompokkan berdasarkan kebutuhan seperti brand, ikon, promo, area, dan kampus.
-- Fokus akhir pada navbar, hero, carousel promo, daftar kos, area/kampus populer, informasi Mamikos, dan footer.
-- Search, profile, favorit, dan detail kos tidak diimplementasikan sebagai halaman aktif. Tombol menuju fitur tersebut hanya menjadi elemen tampilan tanpa navigasi; interaksi lokal seperti carousel dan menu tetap tersedia.
+- **Vite, React, TypeScript, Tailwind CSS, and shadcn/ui**, with Embla for carousels.
+- Reusable components are grouped by context; the homepage is composed in `src/pages/HomePage.tsx`.
+- Room listings use local mock data; assets are organized into groups such as brand, icons, promotions, areas, and campuses.
+- The final scope focuses on the navbar, hero, promo carousel, room listings, popular areas/campuses, Mamikos information, and footer.
+- Search, profile, favorites, and room details are not active pages. Their buttons are display-only and do not navigate; local interactions such as carousels and menus remain available.
 
-## Menjalankan lokal
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Pemeriksaan dan build:
+Checks and production build:
 
 ```bash
 npm run typecheck
@@ -36,4 +36,4 @@ node src/components/AppShell.test.mjs
 npm run build
 ```
 
-Proyek ini dibuat untuk keperluan technical test, bukan layanan resmi Mamikos. Identitas visual dan aset referensi tetap milik pemiliknya masing-masing.
+This project was built for a technical test and is not an official Mamikos service. Visual branding and reference assets belong to their respective owners.
